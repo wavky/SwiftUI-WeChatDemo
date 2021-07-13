@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  SwiftUI-WeChatDemo
+
+  Created by Wavky Huang on 2021/07/14.
+  
+*/
+
+Tabs.Chats = "Chats";
+Tabs.Contacts = "Contacts";
+Tabs.Discover = "Discover";
+Tabs.Me = "Me";

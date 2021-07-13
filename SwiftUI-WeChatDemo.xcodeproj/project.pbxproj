@@ -7,19 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C62D9DE0269DE750003F9923 /* SwiftUI_WeChatDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D9DDF269DE750003F9923 /* SwiftUI_WeChatDemoApp.swift */; };
-		C62D9DE2269DE750003F9923 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D9DE1269DE750003F9923 /* ContentView.swift */; };
-		C62D9DE4269DE752003F9923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C62D9DE3269DE752003F9923 /* Assets.xcassets */; };
+		C62D9DE0269DE750003F9923 /* WeChatDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D9DDF269DE750003F9923 /* WeChatDemoApp.swift */; };
+		C62D9DE4269DE752003F9923 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C62D9DE3269DE752003F9923 /* Image.xcassets */; };
 		C62D9DE7269DE752003F9923 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C62D9DE6269DE752003F9923 /* Preview Assets.xcassets */; };
+		C62D9DF1269DE830003F9923 /* swiftui-assets-template.stencil in Resources */ = {isa = PBXBuildFile; fileRef = C62D9DEE269DE830003F9923 /* swiftui-assets-template.stencil */; };
+		C62D9DF2269DE830003F9923 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = C62D9DEF269DE830003F9923 /* swiftgen.yml */; };
+		C62D9DF3269DE830003F9923 /* swiftui-strings-template.stencil in Resources */ = {isa = PBXBuildFile; fileRef = C62D9DF0269DE830003F9923 /* swiftui-strings-template.stencil */; };
+		C62D9DF8269DE904003F9923 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C62D9DF7269DE904003F9923 /* Color.xcassets */; };
+		C62D9DFB269DE933003F9923 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C62D9DFD269DE933003F9923 /* Localizable.strings */; };
+		C62D9E01269DEA85003F9923 /* TabContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D9E00269DEA85003F9923 /* TabContainer.swift */; };
+		C62D9E04269DEC8D003F9923 /* assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D9E02269DEC8C003F9923 /* assets.swift */; };
+		C62D9E05269DEC8D003F9923 /* strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D9E03269DEC8C003F9923 /* strings.swift */; };
+		C62D9E07269DEE92003F9923 /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D9E06269DEE92003F9923 /* ChatsView.swift */; };
+		C62D9E0A269DFE0F003F9923 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C62D9E0C269DFE0F003F9923 /* InfoPlist.strings */; };
+		C62D9E12269DFEDD003F9923 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D9E11269DFEDD003F9923 /* ContactsView.swift */; };
+		C62D9E14269DFF09003F9923 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D9E13269DFF09003F9923 /* DiscoverView.swift */; };
+		C62D9E16269DFF2F003F9923 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D9E15269DFF2F003F9923 /* MeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C62D9DDC269DE750003F9923 /* SwiftUI-WeChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-WeChatDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C62D9DDF269DE750003F9923 /* SwiftUI_WeChatDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_WeChatDemoApp.swift; sourceTree = "<group>"; };
-		C62D9DE1269DE750003F9923 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C62D9DE3269DE752003F9923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C62D9DDF269DE750003F9923 /* WeChatDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeChatDemoApp.swift; sourceTree = "<group>"; };
+		C62D9DE3269DE752003F9923 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		C62D9DE6269DE752003F9923 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C62D9DE8269DE752003F9923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C62D9DEE269DE830003F9923 /* swiftui-assets-template.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "swiftui-assets-template.stencil"; sourceTree = "<group>"; };
+		C62D9DEF269DE830003F9923 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		C62D9DF0269DE830003F9923 /* swiftui-strings-template.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "swiftui-strings-template.stencil"; sourceTree = "<group>"; };
+		C62D9DF7269DE904003F9923 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		C62D9DFC269DE933003F9923 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C62D9E00269DEA85003F9923 /* TabContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContainer.swift; sourceTree = "<group>"; };
+		C62D9E02269DEC8C003F9923 /* assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = assets.swift; sourceTree = "<group>"; };
+		C62D9E03269DEC8C003F9923 /* strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = strings.swift; sourceTree = "<group>"; };
+		C62D9E06269DEE92003F9923 /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
+		C62D9E0B269DFE0F003F9923 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C62D9E0D269DFE1C003F9923 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		C62D9E11269DFEDD003F9923 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		C62D9E13269DFF09003F9923 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		C62D9E15269DFF2F003F9923 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +61,9 @@
 		C62D9DD3269DE750003F9923 = {
 			isa = PBXGroup;
 			children = (
+				C62D9DEF269DE830003F9923 /* swiftgen.yml */,
+				C62D9DEE269DE830003F9923 /* swiftui-assets-template.stencil */,
+				C62D9DF0269DE830003F9923 /* swiftui-strings-template.stencil */,
 				C62D9DDE269DE750003F9923 /* SwiftUI-WeChatDemo */,
 				C62D9DDD269DE750003F9923 /* Products */,
 			);
@@ -52,10 +80,12 @@
 		C62D9DDE269DE750003F9923 /* SwiftUI-WeChatDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C62D9DDF269DE750003F9923 /* SwiftUI_WeChatDemoApp.swift */,
-				C62D9DE1269DE750003F9923 /* ContentView.swift */,
-				C62D9DE3269DE752003F9923 /* Assets.xcassets */,
+				C62D9DDF269DE750003F9923 /* WeChatDemoApp.swift */,
+				C62D9DFE269DE9A9003F9923 /* UI */,
+				C62D9DF5269DE84F003F9923 /* Generated */,
+				C62D9DF6269DE855003F9923 /* Resources */,
 				C62D9DE8269DE752003F9923 /* Info.plist */,
+				C62D9E0C269DFE0F003F9923 /* InfoPlist.strings */,
 				C62D9DE5269DE752003F9923 /* Preview Content */,
 			);
 			path = "SwiftUI-WeChatDemo";
@@ -69,6 +99,69 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C62D9DF5269DE84F003F9923 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				C62D9E03269DEC8C003F9923 /* strings.swift */,
+				C62D9E02269DEC8C003F9923 /* assets.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		C62D9DF6269DE855003F9923 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C62D9DE3269DE752003F9923 /* Image.xcassets */,
+				C62D9DF7269DE904003F9923 /* Color.xcassets */,
+				C62D9DFD269DE933003F9923 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C62D9DFE269DE9A9003F9923 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C62D9DFF269DE9DD003F9923 /* Chats */,
+				C62D9E0E269DFE85003F9923 /* Contacts */,
+				C62D9E10269DFE9F003F9923 /* Discover */,
+				C62D9E0F269DFE9A003F9923 /* Me */,
+				C62D9E00269DEA85003F9923 /* TabContainer.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C62D9DFF269DE9DD003F9923 /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				C62D9E06269DEE92003F9923 /* ChatsView.swift */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		C62D9E0E269DFE85003F9923 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				C62D9E11269DFEDD003F9923 /* ContactsView.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		C62D9E0F269DFE9A003F9923 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				C62D9E15269DFF2F003F9923 /* MeView.swift */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		C62D9E10269DFE9F003F9923 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				C62D9E13269DFF09003F9923 /* DiscoverView.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,6 +172,7 @@
 				C62D9DD8269DE750003F9923 /* Sources */,
 				C62D9DD9269DE750003F9923 /* Frameworks */,
 				C62D9DDA269DE750003F9923 /* Resources */,
+				C62D9DF4269DE83D003F9923 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -109,7 +203,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				"zh-Hans",
 			);
 			mainGroup = C62D9DD3269DE750003F9923;
 			productRefGroup = C62D9DDD269DE750003F9923 /* Products */;
@@ -126,24 +220,76 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C62D9DF1269DE830003F9923 /* swiftui-assets-template.stencil in Resources */,
+				C62D9E0A269DFE0F003F9923 /* InfoPlist.strings in Resources */,
 				C62D9DE7269DE752003F9923 /* Preview Assets.xcassets in Resources */,
-				C62D9DE4269DE752003F9923 /* Assets.xcassets in Resources */,
+				C62D9DE4269DE752003F9923 /* Image.xcassets in Resources */,
+				C62D9DFB269DE933003F9923 /* Localizable.strings in Resources */,
+				C62D9DF3269DE830003F9923 /* swiftui-strings-template.stencil in Resources */,
+				C62D9DF2269DE830003F9923 /* swiftgen.yml in Resources */,
+				C62D9DF8269DE904003F9923 /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C62D9DF4269DE83D003F9923 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftgen\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C62D9DD8269DE750003F9923 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C62D9DE2269DE750003F9923 /* ContentView.swift in Sources */,
-				C62D9DE0269DE750003F9923 /* SwiftUI_WeChatDemoApp.swift in Sources */,
+				C62D9E07269DEE92003F9923 /* ChatsView.swift in Sources */,
+				C62D9E01269DEA85003F9923 /* TabContainer.swift in Sources */,
+				C62D9E04269DEC8D003F9923 /* assets.swift in Sources */,
+				C62D9E12269DFEDD003F9923 /* ContactsView.swift in Sources */,
+				C62D9E16269DFF2F003F9923 /* MeView.swift in Sources */,
+				C62D9E14269DFF09003F9923 /* DiscoverView.swift in Sources */,
+				C62D9E05269DEC8D003F9923 /* strings.swift in Sources */,
+				C62D9DE0269DE750003F9923 /* WeChatDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C62D9DFD269DE933003F9923 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C62D9DFC269DE933003F9923 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		C62D9E0C269DFE0F003F9923 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C62D9E0B269DFE0F003F9923 /* en */,
+				C62D9E0D269DFE1C003F9923 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C62D9DE9269DE752003F9923 /* Debug */ = {

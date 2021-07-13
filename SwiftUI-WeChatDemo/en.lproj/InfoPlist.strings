@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  SwiftUI-WeChatDemo
+
+  Created by Wavky Huang on 2021/07/14.
+  
+*/
+
+CFBundleDisplayName = "WeChatDemo";

@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct SwiftUI_WeChatDemoApp: App {
+struct WeChatDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabContainer()
         }
     }
 }

@@ -6,6 +6,8 @@
   
 */
 
+AppName = "WeChat";
+
 Tabs.Chats = "Chats";
 Tabs.Contacts = "Contacts";
 Tabs.Discover = "Discover";

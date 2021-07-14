@@ -23,6 +23,9 @@
 		C62D9E12269DFEDD003F9923 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D9E11269DFEDD003F9923 /* ContactsView.swift */; };
 		C62D9E14269DFF09003F9923 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D9E13269DFF09003F9923 /* DiscoverView.swift */; };
 		C62D9E16269DFF2F003F9923 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D9E15269DFF2F003F9923 /* MeView.swift */; };
+		C62D9E19269E042A003F9923 /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D9E18269E042A003F9923 /* ChatList.swift */; };
+		C62D9E1B269E073A003F9923 /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D9E1A269E073A003F9923 /* ContactList.swift */; };
+		C62D9E1D269EC94D003F9923 /* ChatItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D9E1C269EC94D003F9923 /* ChatItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,9 @@
 		C62D9E11269DFEDD003F9923 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		C62D9E13269DFF09003F9923 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		C62D9E15269DFF2F003F9923 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		C62D9E18269E042A003F9923 /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
+		C62D9E1A269E073A003F9923 /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
+		C62D9E1C269EC94D003F9923 /* ChatItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 			children = (
 				C62D9DDF269DE750003F9923 /* WeChatDemoApp.swift */,
 				C62D9DFE269DE9A9003F9923 /* UI */,
+				C62D9E17269E027B003F9923 /* Data */,
 				C62D9DF5269DE84F003F9923 /* Generated */,
 				C62D9DF6269DE855003F9923 /* Resources */,
 				C62D9DE8269DE752003F9923 /* Info.plist */,
@@ -134,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				C62D9E06269DEE92003F9923 /* ChatsView.swift */,
+				C62D9E1C269EC94D003F9923 /* ChatItemView.swift */,
 			);
 			path = Chats;
 			sourceTree = "<group>";
@@ -160,6 +168,15 @@
 				C62D9E13269DFF09003F9923 /* DiscoverView.swift */,
 			);
 			path = Discover;
+			sourceTree = "<group>";
+		};
+		C62D9E17269E027B003F9923 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C62D9E18269E042A003F9923 /* ChatList.swift */,
+				C62D9E1A269E073A003F9923 /* ContactList.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,12 +276,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C62D9E07269DEE92003F9923 /* ChatsView.swift in Sources */,
+				C62D9E1D269EC94D003F9923 /* ChatItemView.swift in Sources */,
 				C62D9E01269DEA85003F9923 /* TabContainer.swift in Sources */,
 				C62D9E04269DEC8D003F9923 /* assets.swift in Sources */,
 				C62D9E12269DFEDD003F9923 /* ContactsView.swift in Sources */,
+				C62D9E1B269E073A003F9923 /* ContactList.swift in Sources */,
 				C62D9E16269DFF2F003F9923 /* MeView.swift in Sources */,
 				C62D9E14269DFF09003F9923 /* DiscoverView.swift in Sources */,
 				C62D9E05269DEC8D003F9923 /* strings.swift in Sources */,
+				C62D9E19269E042A003F9923 /* ChatList.swift in Sources */,
 				C62D9DE0269DE750003F9923 /* WeChatDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

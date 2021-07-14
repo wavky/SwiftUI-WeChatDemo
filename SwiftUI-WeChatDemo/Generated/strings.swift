@@ -15,6 +15,8 @@ import SwiftUI
 // MARK: - Strings
 
 public enum L10n {
+  /// WeChat
+  public static let appName = LocalizedString(lookupKey: "AppName")
   public enum Tabs {
     /// Chats
     public static let chats = LocalizedString(lookupKey: "Tabs.Chats")

@@ -14,7 +14,7 @@ struct ChatFlowView: View {
     
     var body: some View {
         ScrollViewReader { scrollView in
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack(spacing:0) {
                     ForEach(messageFlow, id: \.self) { message in
                         ChatMessageView(message: message).onAppear() {
@@ -33,8 +33,15 @@ struct ChatFlowView: View {
 }
 
 struct ChatFlowView_Previews: PreviewProvider {
-    static let chat = getDefaultChatList()[0]
+    static let opposite = getDefaultContactList().shuffled()[0]
+    static let messages = getDefaultChatList().map(\.lastMessage).shuffled()
+    static let chatMessages = [
+        ChatMessage(side: .Left(profileImage: opposite.profileImage), text: messages[0]),
+        ChatMessage(side: .Right, text: messages[1]),
+        ChatMessage(side: .Left(profileImage: opposite.profileImage), text: messages[2]),
+        ChatMessage(side: .Right, text: messages[3])
+    ]
     static var previews: some View {
-        ChatFlowView(messageFlow: .constant([]))
+        ChatFlowView(messageFlow: .constant(chatMessages))
     }
 }

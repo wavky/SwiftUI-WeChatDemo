@@ -13,6 +13,7 @@ struct ChatsView: View {
         NavigationView {
             ScrollView(showsIndicators: false) {
                 VStack(spacing:0) {
+                    SearchBarView()
                     ForEach(chats, id: \.self) { chat in
                         NavigationLink(destination: createChatDetailView(with: chat)) {
                             ChatItemView(chat: chat)

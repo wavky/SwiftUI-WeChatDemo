@@ -17,6 +17,10 @@ import SwiftUI
 public enum L10n {
   /// WeChat
   public static let appName = LocalizedString(lookupKey: "AppName")
+  public enum SearchBar {
+    /// Search
+    public static let hint = LocalizedString(lookupKey: "SearchBar.Hint")
+  }
   public enum Tabs {
     /// Chats
     public static let chats = LocalizedString(lookupKey: "Tabs.Chats")

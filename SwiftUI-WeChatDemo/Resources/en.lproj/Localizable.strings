@@ -12,3 +12,5 @@ Tabs.Chats = "Chats";
 Tabs.Contacts = "Contacts";
 Tabs.Discover = "Discover";
 Tabs.Me = "Me";
+
+SearchBar.Hint = "Search";

@@ -34,6 +34,7 @@
 		C68BFDC0269FDD9D00B52C60 /* ChatDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68BFDBF269FDD9D00B52C60 /* ChatDetailViewModel.swift */; };
 		C68BFDC226A024E200B52C60 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C68BFDC126A024E200B52C60 /* .gitignore */; };
 		C6C86AFC26A076F3009422DB /* KeyboardVisibilityReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C86AFB26A076F3009422DB /* KeyboardVisibilityReporter.swift */; };
+		C6C86AFE26A0922A009422DB /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C86AFD26A0922A009422DB /* SearchBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		C68BFDBF269FDD9D00B52C60 /* ChatDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewModel.swift; sourceTree = "<group>"; };
 		C68BFDC126A024E200B52C60 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		C6C86AFB26A076F3009422DB /* KeyboardVisibilityReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardVisibilityReporter.swift; sourceTree = "<group>"; };
+		C6C86AFD26A0922A009422DB /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				C62D9E20269F0E57003F9923 /* Detail */,
 				C62D9E06269DEE92003F9923 /* ChatsView.swift */,
 				C62D9E1C269EC94D003F9923 /* ChatItemView.swift */,
+				C6C86AFD26A0922A009422DB /* SearchBarView.swift */,
 			);
 			path = Chats;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				C62D9E12269DFEDD003F9923 /* ContactsView.swift in Sources */,
 				C62D9E1B269E073A003F9923 /* ContactList.swift in Sources */,
 				C62D9E16269DFF2F003F9923 /* MeView.swift in Sources */,
+				C6C86AFE26A0922A009422DB /* SearchBarView.swift in Sources */,
 				C62D9E14269DFF09003F9923 /* DiscoverView.swift in Sources */,
 				C62D9E05269DEC8D003F9923 /* strings.swift in Sources */,
 				C62D9E1F269F0819003F9923 /* ChatDetailView.swift in Sources */,

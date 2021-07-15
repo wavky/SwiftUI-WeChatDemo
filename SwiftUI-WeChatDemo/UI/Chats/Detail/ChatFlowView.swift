@@ -22,7 +22,6 @@ struct ChatFlowView: View {
                         }
                     }
                 }.onChange(of: keyboard.isVisible) { isVisible in
-                    print("isVisible: \(isVisible)")
                     if isVisible {
                         scrollView.scrollTo(messageFlow.last!)
                     }

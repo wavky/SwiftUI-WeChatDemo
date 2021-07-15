@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ChatFlowView: View {
     @Binding var messageFlow: [ChatMessage]
+    @StateObject private var keyboard = KeyboardVisibilityReporter()
     
     var body: some View {
         ScrollViewReader { scrollView in
@@ -19,6 +20,11 @@ struct ChatFlowView: View {
                         ChatMessageView(message: message).onAppear() {
                             scrollView.scrollTo(message)
                         }
+                    }
+                }.onChange(of: keyboard.isVisible) { isVisible in
+                    print("isVisible: \(isVisible)")
+                    if isVisible {
+                        scrollView.scrollTo(messageFlow.last!)
                     }
                 }
             }.background(Asset.Color.chatGray.color)

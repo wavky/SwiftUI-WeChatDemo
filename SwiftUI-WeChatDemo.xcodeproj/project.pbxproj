@@ -33,6 +33,7 @@
 		C68BFDBD269FD16A00B52C60 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68BFDBC269FD16A00B52C60 /* ChatMessage.swift */; };
 		C68BFDC0269FDD9D00B52C60 /* ChatDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68BFDBF269FDD9D00B52C60 /* ChatDetailViewModel.swift */; };
 		C68BFDC226A024E200B52C60 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C68BFDC126A024E200B52C60 /* .gitignore */; };
+		C6C86AFC26A076F3009422DB /* KeyboardVisibilityReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C86AFB26A076F3009422DB /* KeyboardVisibilityReporter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		C68BFDBC269FD16A00B52C60 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		C68BFDBF269FDD9D00B52C60 /* ChatDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewModel.swift; sourceTree = "<group>"; };
 		C68BFDC126A024E200B52C60 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		C6C86AFB26A076F3009422DB /* KeyboardVisibilityReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardVisibilityReporter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				C68BFDBC269FD16A00B52C60 /* ChatMessage.swift */,
+				C6C86AFB26A076F3009422DB /* KeyboardVisibilityReporter.swift */,
 			);
 			path = BindingModel;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				C68BFDBD269FD16A00B52C60 /* ChatMessage.swift in Sources */,
 				C62D9E1D269EC94D003F9923 /* ChatItemView.swift in Sources */,
 				C62D9E01269DEA85003F9923 /* TabContainer.swift in Sources */,
+				C6C86AFC26A076F3009422DB /* KeyboardVisibilityReporter.swift in Sources */,
 				C62D9E26269F105B003F9923 /* ChatMessageView.swift in Sources */,
 				C62D9E04269DEC8D003F9923 /* assets.swift in Sources */,
 				C62D9E22269F0ED2003F9923 /* ChatFlowView.swift in Sources */,

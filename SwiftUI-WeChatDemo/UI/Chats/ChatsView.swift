@@ -14,7 +14,9 @@ struct ChatsView: View {
             ScrollView(showsIndicators: false) {
                 VStack(spacing:0) {
                     ForEach(chats, id: \.self) { chat in
-                        ChatItemView(chat: chat)
+                        NavigationLink(destination: createChatDetailView(with: chat)) {
+                            ChatItemView(chat: chat)
+                        }
                     }
                 }
             }
@@ -35,6 +37,14 @@ struct ChatsView: View {
         }
         .accentColor(.black)
     }
+}
+
+private func createChatDetailView(with chat: Chat) -> some View {
+    ChatDetailView(chat: chat,
+                   viewModel: ChatDetailViewModel(
+                    opposite: chat.contact
+                   )
+    )
 }
 
 struct ChatsView_Previews: PreviewProvider {

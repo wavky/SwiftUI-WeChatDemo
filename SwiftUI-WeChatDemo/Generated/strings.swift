@@ -17,6 +17,30 @@ import SwiftUI
 public enum L10n {
   /// WeChat
   public static let appName = LocalizedString(lookupKey: "AppName")
+  public enum Discover {
+    /// Channels
+    public static let channels = LocalizedString(lookupKey: "Discover.Channels")
+    /// Live
+    public static let live = LocalizedString(lookupKey: "Discover.Live")
+    /// Mini Programs
+    public static let miniPrograms = LocalizedString(lookupKey: "Discover.MiniPrograms")
+    /// Moments
+    public static let moments = LocalizedString(lookupKey: "Discover.Moments")
+    /// Nearby
+    public static let nearby = LocalizedString(lookupKey: "Discover.Nearby")
+    /// Scan
+    public static let scan = LocalizedString(lookupKey: "Discover.Scan")
+    /// Search
+    public static let search = LocalizedString(lookupKey: "Discover.Search")
+    /// Shake
+    public static let shake = LocalizedString(lookupKey: "Discover.Shake")
+    /// Top Stories
+    public static let topStories = LocalizedString(lookupKey: "Discover.TopStories")
+    public enum Live {
+      /// Live
+      public static let onAir = LocalizedString(lookupKey: "Discover.Live.OnAir")
+    }
+  }
   public enum SearchBar {
     /// Search
     public static let hint = LocalizedString(lookupKey: "SearchBar.Hint")

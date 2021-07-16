@@ -33,8 +33,10 @@
 		C68BFDBD269FD16A00B52C60 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68BFDBC269FD16A00B52C60 /* ChatMessage.swift */; };
 		C68BFDC0269FDD9D00B52C60 /* ChatDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68BFDBF269FDD9D00B52C60 /* ChatDetailViewModel.swift */; };
 		C68BFDC226A024E200B52C60 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C68BFDC126A024E200B52C60 /* .gitignore */; };
+		C6992B6B26A2108B00116E89 /* DiscoverItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6992B6A26A2108B00116E89 /* DiscoverItems.swift */; };
 		C6C86AFC26A076F3009422DB /* KeyboardVisibilityReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C86AFB26A076F3009422DB /* KeyboardVisibilityReporter.swift */; };
 		C6C86AFE26A0922A009422DB /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C86AFD26A0922A009422DB /* SearchBarView.swift */; };
+		C6C86B0126A09BA7009422DB /* ItemBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C86B0026A09BA7009422DB /* ItemBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,8 +69,10 @@
 		C68BFDBC269FD16A00B52C60 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		C68BFDBF269FDD9D00B52C60 /* ChatDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewModel.swift; sourceTree = "<group>"; };
 		C68BFDC126A024E200B52C60 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		C6992B6A26A2108B00116E89 /* DiscoverItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverItems.swift; sourceTree = "<group>"; };
 		C6C86AFB26A076F3009422DB /* KeyboardVisibilityReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardVisibilityReporter.swift; sourceTree = "<group>"; };
 		C6C86AFD26A0922A009422DB /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		C6C86B0026A09BA7009422DB /* ItemBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				C62D9E00269DEA85003F9923 /* TabContainer.swift */,
+				C6C86AFF26A09B3F009422DB /* Common */,
 				C62D9DFF269DE9DD003F9923 /* Chats */,
 				C62D9E0E269DFE85003F9923 /* Contacts */,
 				C62D9E10269DFE9F003F9923 /* Discover */,
@@ -186,6 +191,7 @@
 		C62D9E10269DFE9F003F9923 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				C6992B6926A2105600116E89 /* Data */,
 				C62D9E13269DFF09003F9923 /* DiscoverView.swift */,
 			);
 			path = Discover;
@@ -228,6 +234,22 @@
 				C68BFDBF269FDD9D00B52C60 /* ChatDetailViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C6992B6926A2105600116E89 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C6992B6A26A2108B00116E89 /* DiscoverItems.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C6C86AFF26A09B3F009422DB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C6C86B0026A09BA7009422DB /* ItemBarView.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +351,7 @@
 			files = (
 				C62D9E07269DEE92003F9923 /* ChatsView.swift in Sources */,
 				C68BFDBD269FD16A00B52C60 /* ChatMessage.swift in Sources */,
+				C6992B6B26A2108B00116E89 /* DiscoverItems.swift in Sources */,
 				C62D9E1D269EC94D003F9923 /* ChatItemView.swift in Sources */,
 				C62D9E01269DEA85003F9923 /* TabContainer.swift in Sources */,
 				C6C86AFC26A076F3009422DB /* KeyboardVisibilityReporter.swift in Sources */,
@@ -339,6 +362,7 @@
 				C62D9E12269DFEDD003F9923 /* ContactsView.swift in Sources */,
 				C62D9E1B269E073A003F9923 /* ContactList.swift in Sources */,
 				C62D9E16269DFF2F003F9923 /* MeView.swift in Sources */,
+				C6C86B0126A09BA7009422DB /* ItemBarView.swift in Sources */,
 				C6C86AFE26A0922A009422DB /* SearchBarView.swift in Sources */,
 				C62D9E14269DFF09003F9923 /* DiscoverView.swift in Sources */,
 				C62D9E05269DEC8D003F9923 /* strings.swift in Sources */,

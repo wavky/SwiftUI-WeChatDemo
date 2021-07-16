@@ -14,3 +14,14 @@ Tabs.Discover = "Discover";
 Tabs.Me = "Me";
 
 SearchBar.Hint = "Search";
+
+Discover.Moments = "Moments";
+Discover.Channels = "Channels";
+Discover.Live = "Live";
+Discover.Scan = "Scan";
+Discover.Shake = "Shake";
+Discover.TopStories = "Top Stories";
+Discover.Search = "Search";
+Discover.Nearby = "Nearby";
+Discover.MiniPrograms = "Mini Programs";
+Discover.Live.OnAir = "Live";

@@ -48,6 +48,7 @@ internal enum Asset {
     internal static let payGreen = ColorAsset(name: "PayGreen")
     internal static let settingsBlue = ColorAsset(name: "SettingsBlue")
     internal static let stickerYellow = ColorAsset(name: "StickerYellow")
+    internal static let searchBarBackgroundGray = ColorAsset(name: "SearchBarBackgroundGray")
     internal static let searchGray = ColorAsset(name: "SearchGray")
     internal static let tabbarGray = ColorAsset(name: "TabbarGray")
     internal static let topBarGray = ColorAsset(name: "TopBarGray")

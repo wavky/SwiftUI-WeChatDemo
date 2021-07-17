@@ -177,7 +177,6 @@
 				C62D9E20269F0E57003F9923 /* Detail */,
 				C62D9E06269DEE92003F9923 /* ChatsView.swift */,
 				C62D9E1C269EC94D003F9923 /* ChatItemView.swift */,
-				C6C86AFD26A0922A009422DB /* SearchBarView.swift */,
 			);
 			path = Chats;
 			sourceTree = "<group>";
@@ -271,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				C6C86B0026A09BA7009422DB /* ItemBarView.swift */,
+				C6C86AFD26A0922A009422DB /* SearchBarView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";

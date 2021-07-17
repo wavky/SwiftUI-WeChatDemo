@@ -12,7 +12,7 @@ struct ContactsView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
+            VStack(spacing: 0) {
                 SearchBarView()
                 List {
                     ForEach(contactGroups, id: \.self) { group in

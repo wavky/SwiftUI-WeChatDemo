@@ -41,6 +41,30 @@ public enum L10n {
       public static let onAir = LocalizedString(lookupKey: "Discover.Live.OnAir")
     }
   }
+  public enum Me {
+    /// Cards & Offers
+    public static let cards = LocalizedString(lookupKey: "Me.Cards")
+    /// Channels
+    public static let channels = LocalizedString(lookupKey: "Me.Channels")
+    /// Favorites
+    public static let favorites = LocalizedString(lookupKey: "Me.Favorites")
+    /// Moments
+    public static let moments = LocalizedString(lookupKey: "Me.Moments")
+    /// Pay
+    public static let pay = LocalizedString(lookupKey: "Me.Pay")
+    /// Settings
+    public static let settings = LocalizedString(lookupKey: "Me.Settings")
+    /// Sticker Gallery
+    public static let sticker = LocalizedString(lookupKey: "Me.Sticker")
+  }
+  public enum MyProfile {
+    /// Wavky Huang
+    public static let name = LocalizedString(lookupKey: "MyProfile.Name")
+    /// Status
+    public static let status = LocalizedString(lookupKey: "MyProfile.Status")
+    /// WeChat ID: 
+    public static let weChatID = LocalizedString(lookupKey: "MyProfile.WeChatID")
+  }
   public enum SearchBar {
     /// Search
     public static let hint = LocalizedString(lookupKey: "SearchBar.Hint")

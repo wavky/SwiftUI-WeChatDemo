@@ -107,6 +107,12 @@ struct ItemBarInfo {
     let profileImage: String?
 }
 
+extension ItemBarInfo {
+    func toItemBarView(withDivider: Bool = false) -> ItemBarView {
+        ItemBarView(itemBarInfo: self, withDivider: withDivider)
+    }
+}
+
 enum IconPattern {
     case Color(Color)
     case AngularGradient(AngularGradient)

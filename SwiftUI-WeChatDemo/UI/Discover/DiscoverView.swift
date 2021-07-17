@@ -16,30 +16,30 @@ struct DiscoverView: View {
             ScrollView(showsIndicators: false) {
                 VStack(spacing:0) {
                     Group {
-                        items[DiscoverItemName.Moments]?.toItemBarView()
+                        items[.Moments]?.toItemBarView()
                         Spacer(minLength: spaceHeight)
                     }
                     Group {
-                        items[DiscoverItemName.Channels]?.toItemBarView(withDivider: true)
-                        items[DiscoverItemName.Live]?.toItemBarView()
+                        items[.Channels]?.toItemBarView(withDivider: true)
+                        items[.Live]?.toItemBarView()
                         Spacer(minLength: spaceHeight)
                     }
                     Group {
-                        items[DiscoverItemName.Scan]?.toItemBarView(withDivider: true)
-                        items[DiscoverItemName.Shake]?.toItemBarView()
+                        items[.Scan]?.toItemBarView(withDivider: true)
+                        items[.Shake]?.toItemBarView()
                         Spacer(minLength: spaceHeight)
                     }
                     Group {
-                        items[DiscoverItemName.TopStories]?.toItemBarView(withDivider: true)
-                        items[DiscoverItemName.Search]?.toItemBarView()
+                        items[.TopStories]?.toItemBarView(withDivider: true)
+                        items[.Search]?.toItemBarView()
                         Spacer(minLength: spaceHeight)
                     }
                     Group {
-                        items[DiscoverItemName.Nearby]?.toItemBarView()
+                        items[.Nearby]?.toItemBarView()
                         Spacer(minLength: spaceHeight)
                     }
                     Group {
-                        items[DiscoverItemName.MiniPrograms]?.toItemBarView()
+                        items[.MiniPrograms]?.toItemBarView()
                     }
                     Spacer()
                 }
@@ -48,12 +48,6 @@ struct DiscoverView: View {
             .navigationBarTitleDisplayMode(.inline)
             .navigationTitle(L10n.Tabs.discover.key)
         }
-    }
-}
-
-extension ItemBarInfo {
-    func toItemBarView(withDivider: Bool = false) -> ItemBarView {
-        ItemBarView(itemBarInfo: self, withDivider: withDivider)
     }
 }
 

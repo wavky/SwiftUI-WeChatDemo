@@ -25,3 +25,15 @@ Discover.Search = "Search";
 Discover.Nearby = "Nearby";
 Discover.MiniPrograms = "Mini Programs";
 Discover.Live.OnAir = "Live";
+
+Me.Pay = "Pay";
+Me.Favorites = "Favorites";
+Me.Moments = "Moments";
+Me.Channels = "Channels";
+Me.Cards = "Cards & Offers";
+Me.Sticker = "Sticker Gallery";
+Me.Settings = "Settings";
+
+MyProfile.Name = "Wavky Huang";
+MyProfile.Status = "Status";
+MyProfile.WeChatID = "WeChat ID: ";

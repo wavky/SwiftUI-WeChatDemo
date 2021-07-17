@@ -8,9 +8,37 @@
 import SwiftUI
 
 struct MeView: View {
+    private let items = getMeItems()
+    private let spaceHeight: CGFloat = 12
+    
     var body: some View {
-        Text("MeView!")
-            .padding()
+        NavigationView {
+            ScrollView(showsIndicators: false) {
+                VStack(spacing:0) {
+                    MyProfileView()
+                    Spacer(minLength: spaceHeight)
+                    Group {
+                        items[.Pay]?.toItemBarView()
+                        Spacer(minLength: spaceHeight)
+                    }
+                    Group {
+                        items[.Favorites]?.toItemBarView(withDivider: true)
+                        items[.Moments]?.toItemBarView(withDivider: true)
+                        items[.Channels]?.toItemBarView(withDivider: true)
+                        items[.Cards]?.toItemBarView(withDivider: true)
+                        items[.Sticker]?.toItemBarView()
+                        Spacer(minLength: spaceHeight)
+                    }
+                    Group {
+                        items[.Settings]?.toItemBarView()
+                    }
+                    Spacer()
+                }
+            }
+            .background(Asset.Color.backgroudGray.color)
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
+        }
     }
 }
 

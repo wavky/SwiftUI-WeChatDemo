@@ -24,6 +24,7 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 internal enum Asset {
   internal enum Color {
     internal static let accentColor = ColorAsset(name: "AccentColor")
+    internal static let backgroudGray = ColorAsset(name: "BackgroudGray")
     internal static let chatGray = ColorAsset(name: "ChatGray")
     internal static let chatGreen = ColorAsset(name: "ChatGreen")
     internal static let channelsOrange = ColorAsset(name: "ChannelsOrange")
@@ -39,6 +40,14 @@ internal enum Asset {
     internal static let shakeBlue = ColorAsset(name: "ShakeBlue")
     internal static let topStoriesYellow = ColorAsset(name: "TopStoriesYellow")
     internal static let lightGray = ColorAsset(name: "LightGray")
+    internal static let cardsBlue = ColorAsset(name: "CardsBlue")
+    internal static let favoritesBlue = ColorAsset(name: "favorites.blue")
+    internal static let favoritesRed = ColorAsset(name: "favorites.red")
+    internal static let favoritesYellow = ColorAsset(name: "favorites.yellow")
+    internal static let meMomentsBlue = ColorAsset(name: "MeMomentsBlue")
+    internal static let payGreen = ColorAsset(name: "PayGreen")
+    internal static let settingsBlue = ColorAsset(name: "SettingsBlue")
+    internal static let stickerYellow = ColorAsset(name: "StickerYellow")
     internal static let searchGray = ColorAsset(name: "SearchGray")
     internal static let tabbarGray = ColorAsset(name: "TabbarGray")
     internal static let topBarGray = ColorAsset(name: "TopBarGray")
@@ -64,6 +73,15 @@ internal enum Asset {
     internal static let discoverSearch = ImageAsset(name: "discover.search")
     internal static let discoverShake = ImageAsset(name: "discover.shake")
     internal static let discoverTopStories = ImageAsset(name: "discover.topStories")
+    internal static let meCards = ImageAsset(name: "me.cards")
+    internal static let meChannels = ImageAsset(name: "me.channels")
+    internal static let meFavorites = ImageAsset(name: "me.favorites")
+    internal static let meMoments = ImageAsset(name: "me.moments")
+    internal static let mePay = ImageAsset(name: "me.pay")
+    internal static let meSettings = ImageAsset(name: "me.settings")
+    internal static let meSticker = ImageAsset(name: "me.sticker")
+    internal static let myprofileQrcodeIcon = ImageAsset(name: "myprofile.qrcode.icon")
+    internal static let myprofileQrcode = ImageAsset(name: "myprofile.qrcode")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

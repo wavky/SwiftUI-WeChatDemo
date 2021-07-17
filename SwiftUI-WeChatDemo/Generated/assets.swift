@@ -54,15 +54,7 @@ internal enum Asset {
     internal static let topBarGray = ColorAsset(name: "TopBarGray")
   }
   internal enum Image {
-    internal static let meCards = ImageAsset(name: "me.cards")
-    internal static let meChannels = ImageAsset(name: "me.channels")
-    internal static let meFavorites = ImageAsset(name: "me.favorites")
-    internal static let meMoments = ImageAsset(name: "me.moments")
-    internal static let mePay = ImageAsset(name: "me.pay")
-    internal static let meSettings = ImageAsset(name: "me.settings")
-    internal static let meSticker = ImageAsset(name: "me.sticker")
-    internal static let myprofileQrcodeIcon = ImageAsset(name: "myprofile.qrcode.icon")
-    internal static let myprofileQrcode = ImageAsset(name: "myprofile.qrcode")
+    internal static let splash = ImageAsset(name: "Splash")
     internal static let avatar01 = ImageAsset(name: "avatar01")
     internal static let avatar02 = ImageAsset(name: "avatar02")
     internal static let avatar03 = ImageAsset(name: "avatar03")
@@ -83,6 +75,15 @@ internal enum Asset {
     internal static let discoverSearch = ImageAsset(name: "discover.search")
     internal static let discoverShake = ImageAsset(name: "discover.shake")
     internal static let discoverTopStories = ImageAsset(name: "discover.topStories")
+    internal static let meCards = ImageAsset(name: "me.cards")
+    internal static let meChannels = ImageAsset(name: "me.channels")
+    internal static let meFavorites = ImageAsset(name: "me.favorites")
+    internal static let meMoments = ImageAsset(name: "me.moments")
+    internal static let mePay = ImageAsset(name: "me.pay")
+    internal static let meSettings = ImageAsset(name: "me.settings")
+    internal static let meSticker = ImageAsset(name: "me.sticker")
+    internal static let myprofileQrcodeIcon = ImageAsset(name: "myprofile.qrcode.icon")
+    internal static let myprofileQrcode = ImageAsset(name: "myprofile.qrcode")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

@@ -17,7 +17,6 @@ struct ContactItemView: View {
                 .scaledToFit()
                 .frame(width: 40, height: 40, alignment: .center)
                 .cornerRadius(4.0)
-                .overlay(RoundedRectangle(cornerRadius: 4).stroke(Color.gray, lineWidth: 1))
             Spacer(minLength: 15)
             VStack(alignment: .leading) {
                 Spacer()

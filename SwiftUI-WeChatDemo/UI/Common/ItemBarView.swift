@@ -42,7 +42,6 @@ struct ItemBarView: View {
                                 .scaledToFit()
                                 .frame(width: 40, height: 40, alignment: .center)
                                 .clipShape(Circle())
-                                .overlay(Circle().stroke().foregroundColor(.gray))
                                 .withBadge(withBudge, radius: 5)
                         }
                         Image(systemName: "chevron.forward")

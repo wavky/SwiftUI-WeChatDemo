@@ -18,7 +18,6 @@ struct ChatItemView: View {
                 .scaledToFit()
                 .frame(width: 50, height: 50, alignment: .center)
                 .cornerRadius(4.0)
-                .overlay(RoundedRectangle(cornerRadius: 4).stroke(Color.gray, lineWidth: 1))
                 .withBadge(isShowBadge)
             Spacer(minLength: 15)
             VStack(alignment: .leading) {

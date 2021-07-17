@@ -37,6 +37,7 @@
 		C6992B6E26A2F4E700116E89 /* MeItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6992B6D26A2F4E700116E89 /* MeItems.swift */; };
 		C6992B7026A2FB4C00116E89 /* MyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6992B6F26A2FB4C00116E89 /* MyProfile.swift */; };
 		C6992B7226A3036B00116E89 /* MyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6992B7126A3036B00116E89 /* MyProfileView.swift */; };
+		C6C300BA26A3148100281063 /* QrCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C300B926A3148100281063 /* QrCodeView.swift */; };
 		C6C86AFC26A076F3009422DB /* KeyboardVisibilityReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C86AFB26A076F3009422DB /* KeyboardVisibilityReporter.swift */; };
 		C6C86AFE26A0922A009422DB /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C86AFD26A0922A009422DB /* SearchBarView.swift */; };
 		C6C86B0126A09BA7009422DB /* ItemBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C86B0026A09BA7009422DB /* ItemBarView.swift */; };
@@ -76,6 +77,7 @@
 		C6992B6D26A2F4E700116E89 /* MeItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeItems.swift; sourceTree = "<group>"; };
 		C6992B6F26A2FB4C00116E89 /* MyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfile.swift; sourceTree = "<group>"; };
 		C6992B7126A3036B00116E89 /* MyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileView.swift; sourceTree = "<group>"; };
+		C6C300B926A3148100281063 /* QrCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeView.swift; sourceTree = "<group>"; };
 		C6C86AFB26A076F3009422DB /* KeyboardVisibilityReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardVisibilityReporter.swift; sourceTree = "<group>"; };
 		C6C86AFD26A0922A009422DB /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		C6C86B0026A09BA7009422DB /* ItemBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBarView.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				C6992B6C26A2F4D800116E89 /* Data */,
 				C62D9E15269DFF2F003F9923 /* MeView.swift */,
 				C6992B7126A3036B00116E89 /* MyProfileView.swift */,
+				C6C300B926A3148100281063 /* QrCodeView.swift */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				C62D9E12269DFEDD003F9923 /* ContactsView.swift in Sources */,
 				C62D9E1B269E073A003F9923 /* ContactList.swift in Sources */,
 				C62D9E16269DFF2F003F9923 /* MeView.swift in Sources */,
+				C6C300BA26A3148100281063 /* QrCodeView.swift in Sources */,
 				C6C86B0126A09BA7009422DB /* ItemBarView.swift in Sources */,
 				C6C86AFE26A0922A009422DB /* SearchBarView.swift in Sources */,
 				C6992B7226A3036B00116E89 /* MyProfileView.swift in Sources */,

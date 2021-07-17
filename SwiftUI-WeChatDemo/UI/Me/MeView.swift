@@ -15,7 +15,9 @@ struct MeView: View {
         NavigationView {
             ScrollView(showsIndicators: false) {
                 VStack(spacing:0) {
-                    MyProfileView()
+                    NavigationLink(destination: QrCodeView()) {
+                        MyProfileView()
+                    }
                     Spacer(minLength: spaceHeight)
                     Group {
                         items[.Pay]?.toItemBarView()
@@ -39,6 +41,7 @@ struct MeView: View {
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)
         }
+        .accentColor(.black)
     }
 }
 

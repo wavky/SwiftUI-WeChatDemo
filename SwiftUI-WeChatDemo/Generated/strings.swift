@@ -65,6 +65,10 @@ public enum L10n {
     /// WeChat ID: 
     public static let weChatID = LocalizedString(lookupKey: "MyProfile.WeChatID")
   }
+  public enum QrCode {
+    /// My QR Code
+    public static let title = LocalizedString(lookupKey: "QrCode.Title")
+  }
   public enum SearchBar {
     /// Search
     public static let hint = LocalizedString(lookupKey: "SearchBar.Hint")

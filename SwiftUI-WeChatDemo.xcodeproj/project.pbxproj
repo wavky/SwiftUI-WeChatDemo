@@ -38,6 +38,7 @@
 		C6992B7026A2FB4C00116E89 /* MyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6992B6F26A2FB4C00116E89 /* MyProfile.swift */; };
 		C6992B7226A3036B00116E89 /* MyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6992B7126A3036B00116E89 /* MyProfileView.swift */; };
 		C6C300BA26A3148100281063 /* QrCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C300B926A3148100281063 /* QrCodeView.swift */; };
+		C6C300BC26A31C7200281063 /* ContactItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C300BB26A31C7200281063 /* ContactItemView.swift */; };
 		C6C86AFC26A076F3009422DB /* KeyboardVisibilityReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C86AFB26A076F3009422DB /* KeyboardVisibilityReporter.swift */; };
 		C6C86AFE26A0922A009422DB /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C86AFD26A0922A009422DB /* SearchBarView.swift */; };
 		C6C86B0126A09BA7009422DB /* ItemBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C86B0026A09BA7009422DB /* ItemBarView.swift */; };
@@ -78,6 +79,7 @@
 		C6992B6F26A2FB4C00116E89 /* MyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfile.swift; sourceTree = "<group>"; };
 		C6992B7126A3036B00116E89 /* MyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileView.swift; sourceTree = "<group>"; };
 		C6C300B926A3148100281063 /* QrCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeView.swift; sourceTree = "<group>"; };
+		C6C300BB26A31C7200281063 /* ContactItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactItemView.swift; sourceTree = "<group>"; };
 		C6C86AFB26A076F3009422DB /* KeyboardVisibilityReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardVisibilityReporter.swift; sourceTree = "<group>"; };
 		C6C86AFD26A0922A009422DB /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		C6C86B0026A09BA7009422DB /* ItemBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBarView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				C62D9E11269DFEDD003F9923 /* ContactsView.swift */,
+				C6C300BB26A31C7200281063 /* ContactItemView.swift */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				C62D9E05269DEC8D003F9923 /* strings.swift in Sources */,
 				C62D9E1F269F0819003F9923 /* ChatDetailView.swift in Sources */,
 				C62D9E19269E042A003F9923 /* ChatList.swift in Sources */,
+				C6C300BC26A31C7200281063 /* ContactItemView.swift in Sources */,
 				C62D9DE0269DE750003F9923 /* WeChatDemoApp.swift in Sources */,
 				C6992B6E26A2F4E700116E89 /* MeItems.swift in Sources */,
 				C62D9E24269F0FB7003F9923 /* ChatInputView.swift in Sources */,

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ChatItemView: View {
     @State var chat: Chat
+    private let isShowBadge: Bool = Float.random(in: 0...1) > 0.45
     
     var body: some View {
         HStack() {
@@ -18,6 +19,7 @@ struct ChatItemView: View {
                 .frame(width: 50, height: 50, alignment: .center)
                 .cornerRadius(4.0)
                 .overlay(RoundedRectangle(cornerRadius: 4).stroke(Color.gray, lineWidth: 1))
+                .withBadge(isShowBadge)
             Spacer(minLength: 15)
             VStack(alignment: .leading) {
                 Spacer()

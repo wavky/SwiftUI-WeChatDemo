@@ -10,6 +10,7 @@ import SwiftUI
 struct ItemBarView: View {
     let itemBarInfo: ItemBarInfo
     let withDivider: Bool
+    let withBudge: Bool
     
     var body: some View {
         Button(action: {}) {
@@ -42,6 +43,7 @@ struct ItemBarView: View {
                                 .frame(width: 40, height: 40, alignment: .center)
                                 .clipShape(Circle())
                                 .overlay(Circle().stroke().foregroundColor(.gray))
+                                .withBadge(withBudge, radius: 5)
                         }
                         Image(systemName: "chevron.forward")
                             .resizable()
@@ -108,8 +110,8 @@ struct ItemBarInfo {
 }
 
 extension ItemBarInfo {
-    func toItemBarView(withDivider: Bool = false) -> ItemBarView {
-        ItemBarView(itemBarInfo: self, withDivider: withDivider)
+    func toItemBarView(withDivider: Bool = false, withBudge: Bool = true) -> ItemBarView {
+        ItemBarView(itemBarInfo: self, withDivider: withDivider, withBudge: withBudge)
     }
 }
 
@@ -130,7 +132,7 @@ struct ItemBarView_Previews: PreviewProvider {
     static var previews: some View {
         VStack(spacing: 0) {
             ForEach(0..<3, id: \.self) { index in
-                ItemBarView(itemBarInfo: itemBarInfos[index], withDivider: true)
+                ItemBarView(itemBarInfo: itemBarInfos[index], withDivider: true, withBudge: true)
             }
             Spacer()
         }

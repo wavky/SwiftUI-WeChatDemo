@@ -18,7 +18,7 @@ struct SearchBarView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 4))
         }
         .padding(8)
-        .background(Asset.Color.topBarGray.color)
+        .background(Asset.Color.backgroudGray.color)
     }
 }
 

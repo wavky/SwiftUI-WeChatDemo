@@ -44,7 +44,7 @@ struct DiscoverView: View {
                     Spacer()
                 }
             }
-            .background(Asset.Color.topBarGray.color)
+            .background(Asset.Color.backgroudGray.color)
             .navigationBarTitleDisplayMode(.inline)
             .navigationTitle(L10n.Tabs.discover.key)
         }

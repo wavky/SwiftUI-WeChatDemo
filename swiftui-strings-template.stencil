@@ -1,5 +1,6 @@
 // Generated using SwiftGen — https://github.com/SwiftGen/SwiftGen
-// Copy from https://github.com/SwiftGen/SwiftGen/issues/685#issuecomment-782893242
+// Derived from https://github.com/SwiftGen/SwiftGen/issues/685#issuecomment-782893242
+// Origin see https://github.com/SwiftGen/SwiftGen/blob/stable/templates/strings/structured-swift5.stencil
 //
 // Example:
 //
@@ -44,10 +45,10 @@ import SwiftUI
   {% endif %}
   {% if string.types %}
   public static func {{string.name|swiftIdentifier:"pretty"|lowerFirstWord|escapeReservedKeywords}}({% call parametersBlock string.types %}) -> String {
-    return L10n.tr("{{table}}", "{{string.key}}", {% call argumentsBlock string.types %})
+    return tr("{{table}}", "{{string.key}}", {% call argumentsBlock string.types %})
   }
   {% else %}
-  public static let {{string.name|swiftIdentifier:"pretty"|lowerFirstWord|escapeReservedKeywords}} = LocalizedString(lookupKey: "{{string.key}}")
+  public static let {{string.name|swiftIdentifier:"pretty"|lowerFirstWord|escapeReservedKeywords}} = LocalizedString(table: "{{table}}", lookupKey: "{{string.key}}")
   {% endif %}
   {% endfor %}
   {% for child in item.children %}
@@ -56,7 +57,8 @@ import SwiftUI
   }
   {% endfor %}
 {% endmacro %}
-public enum L10n {
+{% set enumName %}{{param.enumName|default:"L10n"}}{% endset %}
+public enum {{enumName}} {
   {% if tables.count > 1 or param.forceFileNameEnum %}
   {% for table in tables %}
   public enum {{table.name|swiftIdentifier:"pretty"|escapeReservedKeywords}} {
@@ -69,25 +71,30 @@ public enum L10n {
 }
 
 // MARK: - Implementation Details
-
-extension L10n {
-  fileprivate static func tr(_ table: String, _ key: String, _ args: CVarArg...) -> String {
-    let format = {{param.bundle|default:"BundleToken.bundle"}}.localizedString(forKey: key, value: nil, table: table)
-    return String(format: format, locale: Locale.current, arguments: args)
-  }
+{% if not param.withoutSupporter %}
+fileprivate func tr(_ table: String, _ key: String, _ args: CVarArg...) -> String {
+  let format = {{param.bundle|default:"BundleToken.bundle"}}.localizedString(forKey: key, value: nil, table: table)
+  return String(format: format, locale: Locale.current, arguments: args)
 }
 
 public struct LocalizedString {
-  internal let lookupKey: String
+  fileprivate let table: String
+  fileprivate let lookupKey: String
+
+  init(table: String, lookupKey:String) {
+    self.table = table
+    self.lookupKey = lookupKey
+  }
 
   var key: LocalizedStringKey {
     LocalizedStringKey(lookupKey)
   }
 
   var text: String {
-    L10n.tr("Localizable", lookupKey)
+    tr(table, lookupKey)
   }
 }
+{% endif %}
 {% if not param.bundle %}
 
 private final class BundleToken {

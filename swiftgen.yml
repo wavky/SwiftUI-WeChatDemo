@@ -1,11 +1,18 @@
 input_dir: ${TARGET_NAME}/Resources/
 output_dir: ${TARGET_NAME}/Generated/
 strings:
-  inputs: en.lproj/
-  filter: ^((?!InfoPlist).)+\.strings$
-  outputs:
-    - templatePath: swiftui-strings-template.stencil
-      output: strings.swift
+    - inputs: en.lproj/Localizable.strings
+      outputs:
+        - templatePath: swiftui-strings-template.stencil
+          output: strings.swift
+    - inputs: en.lproj/
+      filter: ^((?!InfoPlist|Localizable).)+\.strings$
+      outputs:
+        - templatePath: swiftui-strings-template.stencil
+          output: stringsExtra.swift
+          params:
+            enumName: L10nExtra
+            withoutSupporter:
 xcassets:
   inputs: .
   filter: .+\.xcassets$

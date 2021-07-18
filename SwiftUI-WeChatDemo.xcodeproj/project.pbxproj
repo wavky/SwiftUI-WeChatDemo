@@ -32,6 +32,8 @@
 		C62D9E26269F105B003F9923 /* ChatMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D9E25269F105B003F9923 /* ChatMessageView.swift */; };
 		C634FD2F26A352C000A6C23E /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634FD2E26A352C000A6C23E /* View.swift */; };
 		C688301C26A448F30003FA8A /* stringsExtra.swift in Sources */ = {isa = PBXBuildFile; fileRef = C688301B26A448F30003FA8A /* stringsExtra.swift */; };
+		C688303E26A46C250003FA8A /* LastMessage.strings in Resources */ = {isa = PBXBuildFile; fileRef = C688304026A46C250003FA8A /* LastMessage.strings */; };
+		C688304326A46C430003FA8A /* Contact.strings in Resources */ = {isa = PBXBuildFile; fileRef = C688304526A46C430003FA8A /* Contact.strings */; };
 		C68BFDBD269FD16A00B52C60 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68BFDBC269FD16A00B52C60 /* ChatMessage.swift */; };
 		C68BFDC0269FDD9D00B52C60 /* ChatDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68BFDBF269FDD9D00B52C60 /* ChatDetailViewModel.swift */; };
 		C68BFDC226A024E200B52C60 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C68BFDC126A024E200B52C60 /* .gitignore */; };
@@ -75,6 +77,11 @@
 		C62D9E25269F105B003F9923 /* ChatMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageView.swift; sourceTree = "<group>"; };
 		C634FD2E26A352C000A6C23E /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		C688301B26A448F30003FA8A /* stringsExtra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stringsExtra.swift; sourceTree = "<group>"; };
+		C688303F26A46C250003FA8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LastMessage.strings; sourceTree = "<group>"; };
+		C688304426A46C430003FA8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Contact.strings; sourceTree = "<group>"; };
+		C688304626A46CFD0003FA8A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LastMessage.strings"; sourceTree = "<group>"; };
+		C688304726A46D030003FA8A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Contact.strings"; sourceTree = "<group>"; };
+		C688304826A46D060003FA8A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		C68BFDBC269FD16A00B52C60 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		C68BFDBF269FDD9D00B52C60 /* ChatDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewModel.swift; sourceTree = "<group>"; };
 		C68BFDC126A024E200B52C60 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -159,6 +166,8 @@
 				C62D9DE3269DE752003F9923 /* Image.xcassets */,
 				C62D9DF7269DE904003F9923 /* Color.xcassets */,
 				C62D9DFD269DE933003F9923 /* Localizable.strings */,
+				C688304026A46C250003FA8A /* LastMessage.strings */,
+				C688304526A46C430003FA8A /* Contact.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -348,9 +357,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C62D9DF1269DE830003F9923 /* swiftui-assets-template.stencil in Resources */,
+				C688304326A46C430003FA8A /* Contact.strings in Resources */,
 				C62D9E0A269DFE0F003F9923 /* InfoPlist.strings in Resources */,
 				C62D9DE7269DE752003F9923 /* Preview Assets.xcassets in Resources */,
 				C62D9DE4269DE752003F9923 /* Image.xcassets in Resources */,
+				C688303E26A46C250003FA8A /* LastMessage.strings in Resources */,
 				C62D9DFB269DE933003F9923 /* Localizable.strings in Resources */,
 				C62D9DF3269DE830003F9923 /* swiftui-strings-template.stencil in Resources */,
 				C62D9DF2269DE830003F9923 /* swiftgen.yml in Resources */,
@@ -424,6 +435,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C62D9DFC269DE933003F9923 /* en */,
+				C688304826A46D060003FA8A /* zh-Hans */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -435,6 +447,24 @@
 				C62D9E0D269DFE1C003F9923 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C688304026A46C250003FA8A /* LastMessage.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C688303F26A46C250003FA8A /* en */,
+				C688304626A46CFD0003FA8A /* zh-Hans */,
+			);
+			name = LastMessage.strings;
+			sourceTree = "<group>";
+		};
+		C688304526A46C430003FA8A /* Contact.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C688304426A46C430003FA8A /* en */,
+				C688304726A46D030003FA8A /* zh-Hans */,
+			);
+			name = Contact.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

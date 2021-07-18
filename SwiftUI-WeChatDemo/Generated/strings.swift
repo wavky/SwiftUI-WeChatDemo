@@ -17,93 +17,96 @@ import SwiftUI
 
 public enum L10n {
   /// WeChat
-  public static let appName = LocalizedString(lookupKey: "AppName")
+  public static let appName = LocalizedString(table: "Localizable", lookupKey: "AppName")
   public enum Discover {
     /// Channels
-    public static let channels = LocalizedString(lookupKey: "Discover.Channels")
+    public static let channels = LocalizedString(table: "Localizable", lookupKey: "Discover.Channels")
     /// Live
-    public static let live = LocalizedString(lookupKey: "Discover.Live")
+    public static let live = LocalizedString(table: "Localizable", lookupKey: "Discover.Live")
     /// Mini Programs
-    public static let miniPrograms = LocalizedString(lookupKey: "Discover.MiniPrograms")
+    public static let miniPrograms = LocalizedString(table: "Localizable", lookupKey: "Discover.MiniPrograms")
     /// Moments
-    public static let moments = LocalizedString(lookupKey: "Discover.Moments")
+    public static let moments = LocalizedString(table: "Localizable", lookupKey: "Discover.Moments")
     /// Nearby
-    public static let nearby = LocalizedString(lookupKey: "Discover.Nearby")
+    public static let nearby = LocalizedString(table: "Localizable", lookupKey: "Discover.Nearby")
     /// Scan
-    public static let scan = LocalizedString(lookupKey: "Discover.Scan")
+    public static let scan = LocalizedString(table: "Localizable", lookupKey: "Discover.Scan")
     /// Search
-    public static let search = LocalizedString(lookupKey: "Discover.Search")
+    public static let search = LocalizedString(table: "Localizable", lookupKey: "Discover.Search")
     /// Shake
-    public static let shake = LocalizedString(lookupKey: "Discover.Shake")
+    public static let shake = LocalizedString(table: "Localizable", lookupKey: "Discover.Shake")
     /// Top Stories
-    public static let topStories = LocalizedString(lookupKey: "Discover.TopStories")
+    public static let topStories = LocalizedString(table: "Localizable", lookupKey: "Discover.TopStories")
     public enum Live {
       /// Live
-      public static let onAir = LocalizedString(lookupKey: "Discover.Live.OnAir")
+      public static let onAir = LocalizedString(table: "Localizable", lookupKey: "Discover.Live.OnAir")
     }
   }
   public enum Me {
     /// Cards & Offers
-    public static let cards = LocalizedString(lookupKey: "Me.Cards")
+    public static let cards = LocalizedString(table: "Localizable", lookupKey: "Me.Cards")
     /// Channels
-    public static let channels = LocalizedString(lookupKey: "Me.Channels")
+    public static let channels = LocalizedString(table: "Localizable", lookupKey: "Me.Channels")
     /// Favorites
-    public static let favorites = LocalizedString(lookupKey: "Me.Favorites")
+    public static let favorites = LocalizedString(table: "Localizable", lookupKey: "Me.Favorites")
     /// Moments
-    public static let moments = LocalizedString(lookupKey: "Me.Moments")
+    public static let moments = LocalizedString(table: "Localizable", lookupKey: "Me.Moments")
     /// Pay
-    public static let pay = LocalizedString(lookupKey: "Me.Pay")
+    public static let pay = LocalizedString(table: "Localizable", lookupKey: "Me.Pay")
     /// Settings
-    public static let settings = LocalizedString(lookupKey: "Me.Settings")
+    public static let settings = LocalizedString(table: "Localizable", lookupKey: "Me.Settings")
     /// Sticker Gallery
-    public static let sticker = LocalizedString(lookupKey: "Me.Sticker")
+    public static let sticker = LocalizedString(table: "Localizable", lookupKey: "Me.Sticker")
   }
   public enum MyProfile {
     /// Wavky Huang
-    public static let name = LocalizedString(lookupKey: "MyProfile.Name")
+    public static let name = LocalizedString(table: "Localizable", lookupKey: "MyProfile.Name")
     /// Status
-    public static let status = LocalizedString(lookupKey: "MyProfile.Status")
+    public static let status = LocalizedString(table: "Localizable", lookupKey: "MyProfile.Status")
     /// WeChat ID: 
-    public static let weChatID = LocalizedString(lookupKey: "MyProfile.WeChatID")
+    public static let weChatID = LocalizedString(table: "Localizable", lookupKey: "MyProfile.WeChatID")
   }
   public enum QrCode {
     /// My QR Code
-    public static let title = LocalizedString(lookupKey: "QrCode.Title")
+    public static let title = LocalizedString(table: "Localizable", lookupKey: "QrCode.Title")
   }
   public enum SearchBar {
     /// Search
-    public static let hint = LocalizedString(lookupKey: "SearchBar.Hint")
+    public static let hint = LocalizedString(table: "Localizable", lookupKey: "SearchBar.Hint")
   }
   public enum Tabs {
     /// Chats
-    public static let chats = LocalizedString(lookupKey: "Tabs.Chats")
+    public static let chats = LocalizedString(table: "Localizable", lookupKey: "Tabs.Chats")
     /// Contacts
-    public static let contacts = LocalizedString(lookupKey: "Tabs.Contacts")
+    public static let contacts = LocalizedString(table: "Localizable", lookupKey: "Tabs.Contacts")
     /// Discover
-    public static let discover = LocalizedString(lookupKey: "Tabs.Discover")
+    public static let discover = LocalizedString(table: "Localizable", lookupKey: "Tabs.Discover")
     /// Me
-    public static let me = LocalizedString(lookupKey: "Tabs.Me")
+    public static let me = LocalizedString(table: "Localizable", lookupKey: "Tabs.Me")
   }
 }
 
 // MARK: - Implementation Details
-
-extension L10n {
-  fileprivate static func tr(_ table: String, _ key: String, _ args: CVarArg...) -> String {
-    let format = BundleToken.bundle.localizedString(forKey: key, value: nil, table: table)
-    return String(format: format, locale: Locale.current, arguments: args)
-  }
+fileprivate func tr(_ table: String, _ key: String, _ args: CVarArg...) -> String {
+  let format = BundleToken.bundle.localizedString(forKey: key, value: nil, table: table)
+  return String(format: format, locale: Locale.current, arguments: args)
 }
 
 public struct LocalizedString {
-  internal let lookupKey: String
+  fileprivate let table: String
+  fileprivate let lookupKey: String
+
+  init(table: String, lookupKey:String) {
+    self.table = table
+    self.lookupKey = lookupKey
+  }
 
   var key: LocalizedStringKey {
     LocalizedStringKey(lookupKey)
   }
 
   var text: String {
-    L10n.tr("Localizable", lookupKey)
+    tr(table, lookupKey)
   }
 }
 

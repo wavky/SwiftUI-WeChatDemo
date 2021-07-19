@@ -1,0 +1,22 @@
+/* 
+  LastMessage.strings
+  SwiftUI-WeChatDemo
+
+  Created by Wavky Huang on 2021/07/18.
+  
+*/
+
+Message.Hi = "嗨";
+Message.Hey = "嘿";
+Message.Hello = "哈喽";
+Message.NiceToMeetYou = "很高兴认识你";
+Message.HowAreYou = "怎么是你？";
+Message.Aloha = "一袋米要扛几楼";
+Message.AreYouStillThere = "你还活着吗？";
+Message.ILoveYou = "么么哒😘";
+Message.TheMatrixIsLookingForYou = "妈妈喊你回家吃饭";
+Message.IAmRobot = "我是这条街最靓的仔😎";
+
+DateTime.Yesterday = "昨天";
+DateTime.Monday = "星期一";
+DateTime.Sunday = "星期日";

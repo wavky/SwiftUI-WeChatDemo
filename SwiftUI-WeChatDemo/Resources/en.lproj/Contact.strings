@@ -1,0 +1,18 @@
+/* 
+  Contact.strings
+  SwiftUI-WeChatDemo
+
+  Created by Wavky Huang on 2021/07/18.
+  
+*/
+
+Name.Antony = "Antony";
+Name.Apple = "Apple";
+Name.Bosco = "Bosco";
+Name.Joe = "Joe";
+Name.Microsoft = "Microsoft";
+Name.Muraosa = "Muraosa";
+Name.Ron = "Ron";
+Name.Saha = "Saha";
+Name.Sony = "Sony";
+Name.UncleWang = "UncleWang";

@@ -1,0 +1,41 @@
+/* 
+  Localizable.strings
+  SwiftUI-WeChatDemo
+
+  Created by Wavky Huang on 2021/07/14.
+  
+*/
+
+AppName = "WeChat";
+
+Tabs.Chats = "Chats";
+Tabs.Contacts = "Contacts";
+Tabs.Discover = "Discover";
+Tabs.Me = "Me";
+
+SearchBar.Hint = "Search";
+
+Discover.Moments = "Moments";
+Discover.Channels = "Channels";
+Discover.Live = "Live";
+Discover.Scan = "Scan";
+Discover.Shake = "Shake";
+Discover.TopStories = "Top Stories";
+Discover.Search = "Search";
+Discover.Nearby = "Nearby";
+Discover.MiniPrograms = "Mini Programs";
+Discover.Live.OnAir = "Live";
+
+Me.Pay = "Pay";
+Me.Favorites = "Favorites";
+Me.Moments = "Moments";
+Me.Channels = "Channels";
+Me.Cards = "Cards & Offers";
+Me.Sticker = "Sticker Gallery";
+Me.Settings = "Settings";
+
+MyProfile.Name = "Wavky Huang";
+MyProfile.Status = "Status";
+MyProfile.WeChatID = "WeChat ID: ";
+
+QrCode.Title = "My QR Code";

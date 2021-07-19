@@ -38,10 +38,7 @@ struct ChatItemView: View {
                             .frame(alignment: .leading)
                     }
                     Spacer()
-                    Text(chat.lastContactTime)
-                        .font(.caption)
-                        .lineLimit(1)
-                        .foregroundColor(Asset.Color.lightGray.color)
+                    LastContactTimeText(time: chat.lastContactTime)
                 }
                 Spacer()
                 Divider()
@@ -49,6 +46,28 @@ struct ChatItemView: View {
         }
         .padding(.horizontal)
         .frame(maxWidth: .infinity, minHeight: 80, maxHeight: 80)
+    }
+}
+
+fileprivate struct LastContactTimeText: View {
+    let time: LastContactTime
+    var body: some View {
+        switch time {
+        case .String(let time):
+            return AnyView(Text(time)
+                            .lastContactTimeStyle())
+        case .LocalizedString(let time):
+            return AnyView(Text(time.key, tableName: time.table)
+                            .lastContactTimeStyle())
+        }
+    }
+}
+
+fileprivate extension Text {
+    func lastContactTimeStyle() -> some View {
+        self.font(.caption)
+            .lineLimit(1)
+            .foregroundColor(Asset.Color.lightGray.color)
     }
 }
 

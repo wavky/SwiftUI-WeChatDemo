@@ -21,21 +21,33 @@ func getDefaultChatList() -> [Chat] {
         L10nExtra.LastMessage.Message.theMatrixIsLookingForYou,
         L10nExtra.LastMessage.Message.iAmRobot
     ].shuffled()
-    let lastContactTimes = [
-        "13:53", "11:11", "03:23",
-        L10nExtra.LastMessage.DateTime.yesterday.text,
-        L10nExtra.LastMessage.DateTime.monday.text,
-        L10nExtra.LastMessage.DateTime.sunday.text,
-        "2021/04/01", "2021/01/01", "2020/11/11", "2020/02/14"
+    let lastContactTimes: [LastContactTime] = [
+        .String(time: "13:53"),
+        .String(time: "11:11"),
+        .String(time: "03:23"),
+        .LocalizedString(time: L10nExtra.LastMessage.DateTime.yesterday),
+        .LocalizedString(time: L10nExtra.LastMessage.DateTime.monday),
+        .LocalizedString(time: L10nExtra.LastMessage.DateTime.sunday),
+        .String(time: "2021/04/01"),
+        .String(time: "2021/01/01"),
+        .String(time: "2020/11/11"),
+        .String(time: "2020/02/14")
     ]
     var chatList: [Chat] = []
     for index in 0..<10 {
-        chatList.append(Chat(contact: contacts[index], lastMessage: lastMessages[index], lastContactTime: lastContactTimes[index]))
+        chatList.append(Chat(contact: contacts[index],
+                             lastMessage: lastMessages[index],
+                             lastContactTime: lastContactTimes[index]))
     }
     return chatList
 }
 
 struct Chat: Hashable {
     let contact: Contact
-    var lastMessage: LocalizedString, lastContactTime: String
+    var lastMessage: LocalizedString, lastContactTime: LastContactTime
+}
+
+enum LastContactTime: Hashable {
+    case String(time: String),
+         LocalizedString(time: LocalizedString)
 }

@@ -24,6 +24,7 @@ struct MyProfileView: View {
                 (Text(L10n.MyProfile.weChatID.key)+Text(profile.weChatID))
                     .font(.body)
                     .foregroundColor(Color.gray)
+                    .lineLimit(1)
                 (Text(Image(systemName: "plus"))+Text(L10n.MyProfile.status.key))
                     .font(.callout)
                     .fontWeight(.light)

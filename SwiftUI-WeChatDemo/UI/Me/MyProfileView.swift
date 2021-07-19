@@ -12,13 +12,12 @@ struct MyProfileView: View {
     
     var body: some View {
         HStack{
-            Spacer()
             Image(profile.profileImage)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 70, height: 70, alignment: .center)
                 .cornerRadius(8.0)
-            Spacer()
+                .padding(.horizontal, 10)
             VStack(alignment: .leading, spacing: 10) {
                 Text(L10n.MyProfile.name.key)
                     .font(.title2)

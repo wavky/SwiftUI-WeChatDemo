@@ -9,7 +9,7 @@
 AppName = "微信";
 
 Tabs.Chats = "微信";
-Tabs.Contacts = "通信录";
+Tabs.Contacts = "通讯录";
 Tabs.Discover = "发现";
 Tabs.Me = "我";
 

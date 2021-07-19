@@ -35,10 +35,10 @@ struct ChatFlowView_Previews: PreviewProvider {
     static let opposite = getDefaultContactList().shuffled()[0]
     static let messages = getDefaultChatList().map(\.lastMessage).shuffled()
     static let chatMessages = [
-        ChatMessage(side: .Left(profileImage: opposite.profileImage), text: messages[0]),
-        ChatMessage(side: .Right, text: messages[1]),
-        ChatMessage(side: .Left(profileImage: opposite.profileImage), text: messages[2]),
-        ChatMessage(side: .Right, text: messages[3])
+        ChatMessage(side: .Left(profileImage: opposite.profileImage), text: .LocalizedString(text: messages[0])),
+        ChatMessage(side: .Right, text: .LocalizedString(text: messages[1])),
+        ChatMessage(side: .Left(profileImage: opposite.profileImage), text: .LocalizedString(text: messages[2])),
+        ChatMessage(side: .Right, text: .LocalizedString(text: messages[3]))
     ]
     static var previews: some View {
         ChatFlowView(messageFlow: .constant(chatMessages))

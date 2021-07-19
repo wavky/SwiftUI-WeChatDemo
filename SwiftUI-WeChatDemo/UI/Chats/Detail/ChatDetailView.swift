@@ -23,7 +23,8 @@ struct ChatDetailView: View {
                 viewModel.echo(message)
             }
         }
-        .navigationTitle(chat.contact.name)
+        .navigationTitle(Text(chat.contact.name.key,
+                              tableName: chat.contact.name.table))
         .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {

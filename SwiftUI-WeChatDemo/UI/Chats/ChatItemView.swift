@@ -24,11 +24,13 @@ struct ChatItemView: View {
                 Spacer()
                 HStack(alignment: .top) {
                     VStack(alignment: .leading, spacing: 8) {
-                        Text(chat.contact.name)
+                        Text(chat.contact.name.key,
+                             tableName: chat.contact.name.table)
                             .font(.title3)
                             .lineLimit(1)
                             .frame(alignment: .leading)
-                        Text(chat.lastMessage)
+                        Text(chat.lastMessage.key,
+                             tableName: chat.lastMessage.table)
                             .font(.callout)
                             .fontWeight(.light)
                             .lineLimit(1)

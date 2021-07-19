@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct ContactsView: View {
-    private let contactGroups = getDefaultContactList().group().sortedList()
+    @Environment(\.locale) var locale
+    
+    private var contactGroups: [ContactGroup] {
+        getDefaultContactList()
+            .group(withLocale: locale)
+            .sortedList()
+    }
     
     var body: some View {
         NavigationView {
@@ -63,11 +69,13 @@ private extension Array where Element == Contact {
      "A": [Contact(America)]]
      ```
      */
-    func group() -> [Character : [Contact]] {
-        let sorted = sorted { $0.name < $1.name }
+    func group(withLocale locale: Locale) -> [Character : [Contact]] {
+        let sorted = sorted {
+            $0.name.text(withLocale: locale) < $1.name.text(withLocale: locale)
+        }
         var sortedDict: [Character : [Contact]] = [:]
         for contact in sorted {
-            guard let key = contact.name.first else {
+            guard let key = contact.name.text(withLocale: locale).first else {
                 continue
             }
             var group = sortedDict[key] ?? []

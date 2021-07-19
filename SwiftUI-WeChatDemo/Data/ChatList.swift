@@ -10,16 +10,16 @@ import Foundation
 func getDefaultChatList() -> [Chat] {
     let contacts = getDefaultContactList().shuffled()
     let lastMessages = [
-        L10nExtra.LastMessage.Message.hi.text,
-        L10nExtra.LastMessage.Message.hey.text,
-        L10nExtra.LastMessage.Message.hello.text,
-        L10nExtra.LastMessage.Message.niceToMeetYou.text,
-        L10nExtra.LastMessage.Message.howAreYou.text,
-        L10nExtra.LastMessage.Message.aloha.text,
-        L10nExtra.LastMessage.Message.areYouStillThere.text,
-        L10nExtra.LastMessage.Message.iLoveYou.text,
-        L10nExtra.LastMessage.Message.theMatrixIsLookingForYou.text,
-        L10nExtra.LastMessage.Message.iAmRobot.text
+        L10nExtra.LastMessage.Message.hi,
+        L10nExtra.LastMessage.Message.hey,
+        L10nExtra.LastMessage.Message.hello,
+        L10nExtra.LastMessage.Message.niceToMeetYou,
+        L10nExtra.LastMessage.Message.howAreYou,
+        L10nExtra.LastMessage.Message.aloha,
+        L10nExtra.LastMessage.Message.areYouStillThere,
+        L10nExtra.LastMessage.Message.iLoveYou,
+        L10nExtra.LastMessage.Message.theMatrixIsLookingForYou,
+        L10nExtra.LastMessage.Message.iAmRobot
     ].shuffled()
     let lastContactTimes = [
         "13:53", "11:11", "03:23",
@@ -37,5 +37,5 @@ func getDefaultChatList() -> [Chat] {
 
 struct Chat: Hashable {
     let contact: Contact
-    var lastMessage: String, lastContactTime: String
+    var lastMessage: LocalizedString, lastContactTime: String
 }

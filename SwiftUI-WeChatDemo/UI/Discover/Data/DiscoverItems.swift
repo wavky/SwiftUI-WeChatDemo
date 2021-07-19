@@ -36,7 +36,7 @@ func getDiscoverItems() -> [DiscoverItemName : ItemBarInfo] {
             icon: Asset.Image.discoverLive.name,
             iconPattern: IconPattern.Color(Asset.Color.liveRed.color),
             title: L10n.Discover.live.key,
-            name: L10n.Discover.Live.onAir.text,
+            name: L10n.Discover.Live.onAir,
             profileImage: contacts[2].profileImage),
         .Scan: ItemBarInfo(
             icon: Asset.Image.discoverScan.name,

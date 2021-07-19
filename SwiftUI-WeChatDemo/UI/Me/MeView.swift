@@ -18,7 +18,11 @@ struct MeView: View {
                     NavigationLink(destination: QrCodeView()) {
                         MyProfileView()
                     }
-                    Spacer(minLength: spaceHeight)
+                    Group {
+                        Spacer(minLength: spaceHeight)
+                        LanguageSwitcher()
+                        Spacer(minLength: spaceHeight)
+                    }
                     Group {
                         items[.Pay]?.toItemBarView()
                         Spacer(minLength: spaceHeight)

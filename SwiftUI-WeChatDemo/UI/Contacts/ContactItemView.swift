@@ -20,7 +20,8 @@ struct ContactItemView: View {
             Spacer(minLength: 15)
             VStack(alignment: .leading) {
                 Spacer()
-                Text(contact.name)
+                Text(contact.name.key,
+                     tableName: contact.name.table)
                     .font(.title3)
                     .lineLimit(1)
                     .frame(maxWidth: .infinity, alignment: .leading)

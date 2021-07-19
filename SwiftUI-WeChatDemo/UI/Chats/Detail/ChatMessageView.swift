@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ChatMessageView: View {
-    @State var message: ChatMessage
+    let message: ChatMessage
     
     var body: some View {
         HStack(alignment: .top) {
@@ -17,15 +17,33 @@ struct ChatMessageView: View {
                 .scaledToFit()
                 .frame(width: 40, height: 40, alignment: .center)
                 .cornerRadius(4.0)
-            Text(message.text)
-                .padding(10)
-                .background(message.side.color)
-                .clipShape(RoundedRectangle(cornerRadius: 4))
-                .environment(\.layoutDirection, .leftToRight)
+            MessageText(message: message)
             Spacer()
         }
         .padding(10)
         .environment(\.layoutDirection, message.side.direction)
+    }
+}
+
+fileprivate extension Text {
+    func messageStyle(side: Side) -> some View {
+        self.padding(10)
+            .background(side.color)
+            .clipShape(RoundedRectangle(cornerRadius: 4))
+            .environment(\.layoutDirection, .leftToRight)
+    }
+}
+
+fileprivate struct MessageText: View {
+    let message: ChatMessage
+    var body: some View {
+        switch message.text {
+        case .String(let text):
+            Text(text).messageStyle(side: message.side)
+        case .LocalizedString(let text):
+            Text(text.key, tableName: text.table)
+                .messageStyle(side: message.side)
+        }
     }
 }
 
@@ -55,10 +73,10 @@ struct ChatMessageView_Previews: PreviewProvider {
     static var previews: some View {
         ScrollView() {
             VStack(spacing: 0) {
-                ChatMessageView(message: ChatMessage(side: .Left(profileImage: contact.profileImage), text: "Hello?"))
-                ChatMessageView(message: ChatMessage(side: .Right, text: "Hello?"))
-                ChatMessageView(message: ChatMessage(side: .Left(profileImage: contact.profileImage), text: "Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?"))
-                ChatMessageView(message: ChatMessage(side: .Right, text: "Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?"))
+                ChatMessageView(message: ChatMessage(side: .Left(profileImage: contact.profileImage), text: .String(text: "Hello?")))
+                ChatMessageView(message: ChatMessage(side: .Right, text: .String(text: "Hello?")))
+                ChatMessageView(message: ChatMessage(side: .Left(profileImage: contact.profileImage), text: .String(text: "Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?")))
+                ChatMessageView(message: ChatMessage(side: .Right, text: .String(text: "Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?Hello?")))
             }
         }
         .background(Asset.Color.lightGray.color)

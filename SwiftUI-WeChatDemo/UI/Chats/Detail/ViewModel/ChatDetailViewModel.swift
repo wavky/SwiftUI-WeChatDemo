@@ -27,20 +27,20 @@ class ChatDetailViewModel : ObservableObject {
             })
     }
     
-    func sendLastMessage(_ message: String) {
+    func sendLastMessage(_ message: LocalizedString) {
         messageFlow.append(
             ChatMessage(side: .Left(profileImage: opposite.profileImage),
-                        text: message))
+                        text: .LocalizedString(text: message)))
     }
     
     func send(_ message: String) {
-        messageFlow.append(ChatMessage(side: .Right, text: message))
+        messageFlow.append(ChatMessage(side: .Right, text: .String(text: message)))
     }
     
     func echo(_ message: String) {
         echo.send(
             ChatMessage(side: .Left(profileImage: opposite.profileImage),
-                        text: message.stupidSwap()))
+                        text: .String(text: message.stupidSwap())))
     }
     
     deinit {

@@ -9,7 +9,12 @@ import Foundation
 
 struct ChatMessage: Hashable {
     let side: Side
-    let text: String
+    let text: MessageType
+}
+
+enum MessageType: Hashable {
+    case String(text: String),
+         LocalizedString(text: LocalizedString)
 }
 
 enum Side: Hashable {

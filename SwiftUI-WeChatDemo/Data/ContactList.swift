@@ -12,7 +12,7 @@ func getDefaultContactList() -> [Contact] {
 }
 
 struct Contact: Hashable {
-    let profileImage: String, name: String
+    let profileImage: String, name: LocalizedString
 }
 
 private enum Friends: CaseIterable {
@@ -21,25 +21,25 @@ private enum Friends: CaseIterable {
     var contact: Contact {
         switch self {
         case .Antony:
-            return Contact(profileImage: Asset.Image.avatar01.name, name: L10nExtra.Contact.Name.antony.text)
+            return Contact(profileImage: Asset.Image.avatar01.name, name: L10nExtra.Contact.Name.antony)
         case .Apple:
-            return Contact(profileImage: Asset.Image.avatar02.name, name: L10nExtra.Contact.Name.apple.text)
+            return Contact(profileImage: Asset.Image.avatar02.name, name: L10nExtra.Contact.Name.apple)
         case .Bosco:
-            return Contact(profileImage: Asset.Image.avatar03.name, name: L10nExtra.Contact.Name.bosco.text)
+            return Contact(profileImage: Asset.Image.avatar03.name, name: L10nExtra.Contact.Name.bosco)
         case .Joe:
-            return Contact(profileImage: Asset.Image.avatar04.name, name: L10nExtra.Contact.Name.joe.text)
+            return Contact(profileImage: Asset.Image.avatar04.name, name: L10nExtra.Contact.Name.joe)
         case .Microsoft:
-            return Contact(profileImage: Asset.Image.avatar05.name, name: L10nExtra.Contact.Name.microsoft.text)
+            return Contact(profileImage: Asset.Image.avatar05.name, name: L10nExtra.Contact.Name.microsoft)
         case .Muraosa:
-            return Contact(profileImage: Asset.Image.avatar06.name, name: L10nExtra.Contact.Name.muraosa.text)
+            return Contact(profileImage: Asset.Image.avatar06.name, name: L10nExtra.Contact.Name.muraosa)
         case .Ron:
-            return Contact(profileImage: Asset.Image.avatar07.name, name: L10nExtra.Contact.Name.ron.text)
+            return Contact(profileImage: Asset.Image.avatar07.name, name: L10nExtra.Contact.Name.ron)
         case .Saha:
-            return Contact(profileImage: Asset.Image.avatar08.name, name: L10nExtra.Contact.Name.saha.text)
+            return Contact(profileImage: Asset.Image.avatar08.name, name: L10nExtra.Contact.Name.saha)
         case .Sony:
-            return Contact(profileImage: Asset.Image.avatar09.name, name: L10nExtra.Contact.Name.sony.text)
+            return Contact(profileImage: Asset.Image.avatar09.name, name: L10nExtra.Contact.Name.sony)
         case .UncleWang:
-            return Contact(profileImage: Asset.Image.avatar10.name, name: L10nExtra.Contact.Name.uncleWang.text)
+            return Contact(profileImage: Asset.Image.avatar10.name, name: L10nExtra.Contact.Name.uncleWang)
         }
     }
 }

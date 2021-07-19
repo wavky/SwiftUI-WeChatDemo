@@ -29,7 +29,7 @@ struct ItemBarView: View {
                             .frame(alignment: .leading)
                         Spacer()
                         if let name = itemBarInfo.name {
-                            Text(name)
+                            Text(name.key, tableName: name.table)
                                 .font(.callout)
                                 .fontWeight(.light)
                                 .lineLimit(1)
@@ -104,7 +104,7 @@ struct ItemBarInfo {
     let icon: String
     let iconPattern: IconPattern?
     let title: LocalizedStringKey
-    let name: String?
+    let name: LocalizedString?
     let profileImage: String?
 }
 

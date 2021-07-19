@@ -34,6 +34,8 @@
 		C688301C26A448F30003FA8A /* stringsExtra.swift in Sources */ = {isa = PBXBuildFile; fileRef = C688301B26A448F30003FA8A /* stringsExtra.swift */; };
 		C688303E26A46C250003FA8A /* LastMessage.strings in Resources */ = {isa = PBXBuildFile; fileRef = C688304026A46C250003FA8A /* LastMessage.strings */; };
 		C688304326A46C430003FA8A /* Contact.strings in Resources */ = {isa = PBXBuildFile; fileRef = C688304526A46C430003FA8A /* Contact.strings */; };
+		C688304E26A473F00003FA8A /* LanguageSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C688304D26A473F00003FA8A /* LanguageSwitcher.swift */; };
+		C688305026A49B990003FA8A /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = C688304F26A49B990003FA8A /* Language.swift */; };
 		C68BFDBD269FD16A00B52C60 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68BFDBC269FD16A00B52C60 /* ChatMessage.swift */; };
 		C68BFDC0269FDD9D00B52C60 /* ChatDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68BFDBF269FDD9D00B52C60 /* ChatDetailViewModel.swift */; };
 		C68BFDC226A024E200B52C60 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C68BFDC126A024E200B52C60 /* .gitignore */; };
@@ -82,6 +84,8 @@
 		C688304626A46CFD0003FA8A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LastMessage.strings"; sourceTree = "<group>"; };
 		C688304726A46D030003FA8A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Contact.strings"; sourceTree = "<group>"; };
 		C688304826A46D060003FA8A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C688304D26A473F00003FA8A /* LanguageSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSwitcher.swift; sourceTree = "<group>"; };
+		C688304F26A49B990003FA8A /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		C68BFDBC269FD16A00B52C60 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		C68BFDBF269FDD9D00B52C60 /* ChatDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewModel.swift; sourceTree = "<group>"; };
 		C68BFDC126A024E200B52C60 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -211,6 +215,7 @@
 				C62D9E15269DFF2F003F9923 /* MeView.swift */,
 				C6992B7126A3036B00116E89 /* MyProfileView.swift */,
 				C6C300B926A3148100281063 /* QrCodeView.swift */,
+				C688304D26A473F00003FA8A /* LanguageSwitcher.swift */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 				C62D9E18269E042A003F9923 /* ChatList.swift */,
 				C62D9E1A269E073A003F9923 /* ContactList.swift */,
 				C6992B6F26A2FB4C00116E89 /* MyProfile.swift */,
+				C688304F26A49B990003FA8A /* Language.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -407,6 +413,7 @@
 				C62D9E26269F105B003F9923 /* ChatMessageView.swift in Sources */,
 				C62D9E04269DEC8D003F9923 /* assets.swift in Sources */,
 				C62D9E22269F0ED2003F9923 /* ChatFlowView.swift in Sources */,
+				C688304E26A473F00003FA8A /* LanguageSwitcher.swift in Sources */,
 				C68BFDC0269FDD9D00B52C60 /* ChatDetailViewModel.swift in Sources */,
 				C62D9E12269DFEDD003F9923 /* ContactsView.swift in Sources */,
 				C62D9E1B269E073A003F9923 /* ContactList.swift in Sources */,
@@ -417,6 +424,7 @@
 				C6C86B0126A09BA7009422DB /* ItemBarView.swift in Sources */,
 				C6C86AFE26A0922A009422DB /* SearchBarView.swift in Sources */,
 				C6992B7226A3036B00116E89 /* MyProfileView.swift in Sources */,
+				C688305026A49B990003FA8A /* Language.swift in Sources */,
 				C62D9E14269DFF09003F9923 /* DiscoverView.swift in Sources */,
 				C62D9E05269DEC8D003F9923 /* strings.swift in Sources */,
 				C62D9E1F269F0819003F9923 /* ChatDetailView.swift in Sources */,

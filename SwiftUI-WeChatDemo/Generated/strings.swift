@@ -87,16 +87,22 @@ public enum L10n {
 }
 
 // MARK: - Implementation Details
-fileprivate func tr(_ table: String, _ key: String, _ args: CVarArg...) -> String {
-  let format = BundleToken.bundle.localizedString(forKey: key, value: nil, table: table)
-  return String(format: format, locale: Locale.current, arguments: args)
+fileprivate func tr(_ table: String, _ key: String, _ locale: Locale = Locale.current, _ args: CVarArg...) -> String {
+  let path = Bundle.main.path(forResource: locale.identifier, ofType: "lproj") ?? ""
+  let format: String
+  if let bundle = Bundle(path: path) {
+    format = NSLocalizedString(key, tableName: table, bundle: bundle, comment: "")
+  } else {
+    format = BundleToken.bundle.localizedString(forKey: key, value: nil, table: table)
+  }
+  return String(format: format, locale: locale, arguments: args)
 }
 
-public struct LocalizedString {
-  fileprivate let table: String
+public struct LocalizedString: Hashable {
+  let table: String
   fileprivate let lookupKey: String
 
-  init(table: String, lookupKey:String) {
+  init(table: String, lookupKey: String) {
     self.table = table
     self.lookupKey = lookupKey
   }
@@ -107,6 +113,10 @@ public struct LocalizedString {
 
   var text: String {
     tr(table, lookupKey)
+  }
+
+  func text(withLocale locale: Locale) -> String {
+    tr(table, lookupKey, locale)
   }
 }
 

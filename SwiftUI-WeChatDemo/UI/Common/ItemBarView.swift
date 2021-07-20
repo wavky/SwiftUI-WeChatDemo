@@ -68,7 +68,6 @@ struct ItemBarView: View {
 
 private struct Icon: View {
     let image: String
-    let color = Color.red
     let pattern: IconPattern?
     
     var body: some View {

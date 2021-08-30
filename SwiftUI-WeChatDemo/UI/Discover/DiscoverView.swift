@@ -16,30 +16,30 @@ struct DiscoverView: View {
             ScrollView(showsIndicators: false) {
                 VStack(spacing:0) {
                     Group {
-                        items[.Moments]?.toItemBarView()
+                        items[.Moments]?.toItemView()
                         Spacer(minLength: spaceHeight)
                     }
                     Group {
-                        items[.Channels]?.toItemBarView(withDivider: true)
-                        items[.Live]?.toItemBarView()
+                        items[.Channels]?.toItemView(withDivider: true)
+                        items[.Live]?.toItemView()
                         Spacer(minLength: spaceHeight)
                     }
                     Group {
-                        items[.Scan]?.toItemBarView(withDivider: true)
-                        items[.Shake]?.toItemBarView()
+                        items[.Scan]?.toItemView(withDivider: true)
+                        items[.Shake]?.toItemView()
                         Spacer(minLength: spaceHeight)
                     }
                     Group {
-                        items[.TopStories]?.toItemBarView(withDivider: true)
-                        items[.Search]?.toItemBarView()
+                        items[.TopStories]?.toItemView(withDivider: true)
+                        items[.Search]?.toItemView()
                         Spacer(minLength: spaceHeight)
                     }
                     Group {
-                        items[.Nearby]?.toItemBarView()
+                        items[.Nearby]?.toItemView()
                         Spacer(minLength: spaceHeight)
                     }
                     Group {
-                        items[.MiniPrograms]?.toItemBarView()
+                        items[.MiniPrograms]?.toItemView()
                     }
                     Spacer()
                 }

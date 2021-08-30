@@ -47,7 +47,7 @@
 		C6C300BC26A31C7200281063 /* ContactItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C300BB26A31C7200281063 /* ContactItemView.swift */; };
 		C6C86AFC26A076F3009422DB /* KeyboardVisibilityReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C86AFB26A076F3009422DB /* KeyboardVisibilityReporter.swift */; };
 		C6C86AFE26A0922A009422DB /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C86AFD26A0922A009422DB /* SearchBarView.swift */; };
-		C6C86B0126A09BA7009422DB /* ItemBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C86B0026A09BA7009422DB /* ItemBarView.swift */; };
+		C6C86B0126A09BA7009422DB /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C86B0026A09BA7009422DB /* ItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,7 +97,7 @@
 		C6C300BB26A31C7200281063 /* ContactItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactItemView.swift; sourceTree = "<group>"; };
 		C6C86AFB26A076F3009422DB /* KeyboardVisibilityReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardVisibilityReporter.swift; sourceTree = "<group>"; };
 		C6C86AFD26A0922A009422DB /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
-		C6C86B0026A09BA7009422DB /* ItemBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBarView.swift; sourceTree = "<group>"; };
+		C6C86B0026A09BA7009422DB /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,7 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				C634FD2D26A352B200A6C23E /* extension */,
-				C6C86B0026A09BA7009422DB /* ItemBarView.swift */,
+				C6C86B0026A09BA7009422DB /* ItemView.swift */,
 				C6C86AFD26A0922A009422DB /* SearchBarView.swift */,
 			);
 			path = Common;
@@ -421,7 +421,7 @@
 				C634FD2F26A352C000A6C23E /* View.swift in Sources */,
 				C688301C26A448F30003FA8A /* stringsExtra.swift in Sources */,
 				C6C300BA26A3148100281063 /* QrCodeView.swift in Sources */,
-				C6C86B0126A09BA7009422DB /* ItemBarView.swift in Sources */,
+				C6C86B0126A09BA7009422DB /* ItemView.swift in Sources */,
 				C6C86AFE26A0922A009422DB /* SearchBarView.swift in Sources */,
 				C6992B7226A3036B00116E89 /* MyProfileView.swift in Sources */,
 				C688305026A49B990003FA8A /* Language.swift in Sources */,

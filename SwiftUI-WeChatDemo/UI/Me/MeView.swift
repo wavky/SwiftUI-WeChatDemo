@@ -24,19 +24,19 @@ struct MeView: View {
                         Spacer(minLength: spaceHeight)
                     }
                     Group {
-                        items[.Pay]?.toItemBarView()
+                        items[.Pay]?.toItemView()
                         Spacer(minLength: spaceHeight)
                     }
                     Group {
-                        items[.Favorites]?.toItemBarView(withDivider: true)
-                        items[.Moments]?.toItemBarView(withDivider: true)
-                        items[.Channels]?.toItemBarView(withDivider: true)
-                        items[.Cards]?.toItemBarView(withDivider: true)
-                        items[.Sticker]?.toItemBarView()
+                        items[.Favorites]?.toItemView(withDivider: true)
+                        items[.Moments]?.toItemView(withDivider: true)
+                        items[.Channels]?.toItemView(withDivider: true)
+                        items[.Cards]?.toItemView(withDivider: true)
+                        items[.Sticker]?.toItemView()
                         Spacer(minLength: spaceHeight)
                     }
                     Group {
-                        items[.Settings]?.toItemBarView()
+                        items[.Settings]?.toItemView()
                     }
                     Spacer()
                 }

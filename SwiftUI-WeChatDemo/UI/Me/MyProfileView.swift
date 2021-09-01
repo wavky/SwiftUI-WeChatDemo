@@ -19,7 +19,7 @@ struct MyProfileView: View {
                 .cornerRadius(8.0)
                 .padding(.horizontal, 10)
             VStack(alignment: .leading, spacing: 10) {
-                Text(L10n.MyProfile.name.key)
+                Text(profile.name)
                     .font(.title2)
                 (Text(L10n.MyProfile.weChatID.key)+Text(profile.weChatID))
                     .font(.body)
